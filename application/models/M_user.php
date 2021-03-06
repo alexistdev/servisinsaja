@@ -7,19 +7,13 @@ class M_user extends CI_Model
 	{
 		parent::__construct();
 		$this->load->database();
-		$this->tableName = 'tbemail';
-		$this->tableName2 = 'tbsetting';
+		$this->tableSetting = 'setting';
 	}
 
-	/** Menyimpan data ke dalam tabel email */
-	public function simpan_email($email)
-	{
-		$this->db->insert($this->tableName, $email);
-	}
+
 	/** Mendapatkan data email dari setting */
-	public function get_email()
+	public function get_data_setting()
 	{
-		$this->db->select('email_hosting');
-		return $this->db->get($this->tableName2)->row();
+		return $this->db->get($this->tableSetting);
 	}
 }

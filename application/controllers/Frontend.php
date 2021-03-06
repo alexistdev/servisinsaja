@@ -13,7 +13,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Frontend extends CI_Controller
 {
-	public $session;
+	public $user;
 
 	public function __construct()
 	{
@@ -24,9 +24,30 @@ class Frontend extends CI_Controller
 		}
 	}
 
+	/** Prepare data */
+	private function _dataMember()
+	{
+		$data = [];
+		$getData = $this->user->get_data_setting()->row();
+		$data['title'] = ucwords($getData->judul_bisnis)." | Jasa Layanan Service Online";
+//		//nama dan gambar disidebar
+//		$data['namaUser'] = $getData;
+//		$data['gambarUser'] = $this->gambarUser;
+		return $data;
+	}
+
 	/** Template untuk memanggil view */
 	private function _template($data, $view)
 	{
-		$this->load->view('user/view/' . $view, $data);
+		$this->load->view('frontend/views/' . $view, $data);
+	}
+
+	/** Method untuk halaman Invoice */
+	public function index()
+	{
+		$data = $this->_dataMember();
+		$view = 'v_home';
+		$this->_template($data, $view);
+
 	}
 }
