@@ -3,12 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
 <html>
-<?php $this->load->view('template/v_header') ?>
+<?php $this->load->view('users/template/v_header') ?>
 
 <body class="hold-transition login-page bg-dark">
 
-<!-- Site wrapper -->
-<?php $this->load->view('konten/k_login') ?>
+
+<?php $this->load->view('users/konten/k_auth') ?>
 
 
 <!-- jQuery -->

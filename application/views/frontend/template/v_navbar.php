@@ -42,7 +42,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									</ul>
 								</nav>
 							</div>
-							<a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3 appear-animation" data-appear-animation="fadeIn" data-plugin-options="{'accY': 100}" href="https://themeforest.net/item/porto-responsive-html5-template/4106987" target="_blank">Login</a>
+							<a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3 appear-animation" data-appear-animation="fadeIn" data-plugin-options="{'accY': 100}" href="<?= base_url('Auth'); ?>" target="_blank">Login</a>
 							<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav"><i class="fa fa-bars"></i></button>
 						</div>
 					</div>

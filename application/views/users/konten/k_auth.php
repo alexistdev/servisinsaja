@@ -2,13 +2,12 @@
 defined('BASEPATH') or exit('No direct script access allowed');?>
 <div class="login-box">
 	<div class="login-logo">
-		<img src="<?= base_url('gambar/darmajaya.png'); ?>" alt="logo Ebaak" width="20%"><br>
-		<a href="<?= base_url('Login'); ?>" class="text-white"><b>E</b>Baak</a>
+		<img src="<?= base_url('assets/frontend/img/logo_white.png'); ?>" alt="logo Servisinsaja" width="50%"><br>
 	</div>
 	<!-- /.login-logo -->
 	<div class="card">
 		<div class="card-body login-card-body">
-			<p class="login-box-msg">Administrator Login</p>
+			<p class="login-box-msg">Dashoard Login</p>
 			<p class="login-box-msg">
 				<?php
 				echo $this->session->flashdata('pesan');
@@ -17,9 +16,9 @@ defined('BASEPATH') or exit('No direct script access allowed');?>
 				?>
 			</p>
 
-			<form action="<?= base_url('Login'); ?>" method="post">
+			<form action="<?= base_url('Auth'); ?>" method="post">
 				<div class="input-group mb-3">
-					<input type="text" name="username" maxlength="30" class="form-control" placeholder="Username" required="required">
+					<input type="text" name="username" maxlength="30" class="form-control" placeholder="Email" required="required">
 					<div class="input-group-append">
 						<div class="input-group-text">
 							<span class="fas fa-envelope"></span>
@@ -54,11 +53,14 @@ defined('BASEPATH') or exit('No direct script access allowed');?>
 			</form>
 
 			<!-- /.social-auth-links -->
-
-			<p class="mb-1 mt-4">
-				<a href="forgot-password.html">I forgot my password</a>
-			</p>
-
+			<div class="row mt-3">
+				<div class="col-md-12">
+					<a href="#">Lupa password</a>
+				</div>
+				<div class="col-md-12">
+					<a href="#">Daftar Akun Baru</a>
+				</div>
+			</div>
 		</div>
 		<!-- /.login-card-body -->
 	</div>
