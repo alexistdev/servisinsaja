@@ -30,7 +30,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										</li>
 
 										<li class="dropdown">
-											<a class="dropdown-item dropdown-toggle" href="#">
+											<a class="dropdown-item dropdown-toggle" href="<?= base_url('About'); ?>">
 												Tentang Kami
 											</a>
 										</li>
