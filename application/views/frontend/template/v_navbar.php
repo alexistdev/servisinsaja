@@ -24,15 +24,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											</a>
 										</li>
 										<li class="dropdown">
-											<a class="dropdown-item dropdown-toggle" data-hash data-hash-offset="130" href="#demos">
+											<a class="dropdown-item dropdown-toggle" data-hash data-hash-offset="130" href="<?= base_url('Produk'); ?>">
 												Produk
 											</a>
 										</li>
-										<li class="dropdown">
-											<a class="dropdown-item dropdown-toggle" href="#">
-												Testimoni
-											</a>
-										</li>
+
 										<li class="dropdown">
 											<a class="dropdown-item dropdown-toggle" href="#">
 												Tentang Kami

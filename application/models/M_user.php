@@ -8,6 +8,7 @@ class M_user extends CI_Model
 		parent::__construct();
 		$this->load->database();
 		$this->tableSetting = 'setting';
+		$this->tableProdukJenis = 'produk_jenis';
 	}
 
 
@@ -15,5 +16,15 @@ class M_user extends CI_Model
 	public function get_data_setting()
 	{
 		return $this->db->get($this->tableSetting);
+	}
+
+//	public function get_data_produkjenis()
+//	{
+//		return $this->db->get($this->tableProdukJenis);
+//	}
+
+	public function get_data_produkjenis($limit, $start){
+		$query = $this->db->get($this->tableProdukJenis, $limit, $start);
+		return $query;
 	}
 }
