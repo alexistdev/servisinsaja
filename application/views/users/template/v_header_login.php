@@ -21,7 +21,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 	<!-- Pace -->
 	<link rel="stylesheet" href="<?= base_url('vendor/almasaeed2010/adminlte') ?>/plugins/pace-progress/themes/black/pace-theme-flat-top.css">
-	<!-- DataTables -->
-	<link rel="stylesheet" href="<?= base_url('vendor/almasaeed2010/adminlte') ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-	<link rel="stylesheet" href="<?= base_url('vendor/almasaeed2010/adminlte') ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+	<style>
+		.myloginbox {
+			background-image: url("gambar/box_lg.png");
+		}
+		.myloginBg {
+			background-image: url("gambar/login_bg.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 </head>

@@ -3,9 +3,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
 <html>
-<?php $this->load->view('users/template/v_header') ?>
+<?php $this->load->view('users/template/v_header_login') ?>
 
-<body class="hold-transition login-page bg-dark">
+<body class="hold-transition login-page myloginBg">
 
 
 <?php $this->load->view('users/konten/k_auth') ?>

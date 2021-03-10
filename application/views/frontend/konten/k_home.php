@@ -94,7 +94,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<p class="pr-5 custom-text-color-1">Tidak ada biaya tersembunyi, kami transparan dalam biaya dengan harga terjangkau.</p>
 							</div>
 							<div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750">
-								<img class="img-fluid" alt="Speed Performance" src="<?= base_url('assets/frontend/'); ?>img/landing/reason2.png">
+								<img class="img-fluid" alt="Speed Performance" src="<?= base_url(''); ?>gambar/delivery.png">
 								<div class="d-flex align-items-center mb-2">
 									<span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">2</span>
 									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">DELIVERY</small>Layanan Antar Jemput Barang</h4>
@@ -110,7 +110,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<p class="pr-5 custom-text-color-1">Garansi atau jaminan penservisan selama 1 bulan.</p>
 							</div>
 							<div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" data-appear-animation-duration="750">
-								<img class="img-fluid" alt="Speed Performance" src="<?= base_url('assets/frontend/'); ?>img/landing/reason4.png">
+								<img class="img-fluid" alt="Speed Performance" src="<?= base_url(''); ?>gambar/jadwal_kepastian.png">
 								<div class="d-flex align-items-center mb-2">
 									<span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">4</span>
 									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">JADWAL</small>Kepastian Jadwal Service</h4>
