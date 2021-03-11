@@ -22,6 +22,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<!-- Pace -->
 	<link rel="stylesheet" href="<?= base_url('vendor/almasaeed2010/adminlte') ?>/plugins/pace-progress/themes/black/pace-theme-flat-top.css">
 	<style>
+		.boximage {
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+		/* Bottom left text */
+		.bottom-left1{
+			position: absolute;
+			top: 40%;
+			left: 20%;
+			font-size: 24px;
+			font-weight: 900;
+			transform: translate(-50%, 0%);
+		}
+		.bottom-left2{
+			position: absolute;
+			top: 50%;
+			left: 30%;
+			font-size: 24px;
+			font-weight: 900;
+			transform: translate(-50%, 0%);
+		}
 		.myloginbox {
 			background-image: url("gambar/box_lg.png");
 		}

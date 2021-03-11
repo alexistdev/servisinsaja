@@ -91,29 +91,29 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									<span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">1</span>
 									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">HARGA</small>Sangat Terjangkau</h4>
 								</div>
-								<p class="pr-5 custom-text-color-1">Tidak ada biaya tersembunyi, kami transparan dalam biaya dengan harga terjangkau.</p>
+								<p class="pr-5 custom-text-color-1">Anda tidak perlu takut mengenai penipuan harga. Kami transparansi dalam biaya dengan harga yang terjangkau</p>
 							</div>
 							<div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750">
 								<img class="img-fluid" alt="Speed Performance" src="<?= base_url(''); ?>gambar/delivery.png">
 								<div class="d-flex align-items-center mb-2">
 									<span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">2</span>
-									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">DELIVERY</small>Layanan Antar Jemput Barang</h4>
+									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1"> &nbsp;</small>Penjemputan dan Pengantaran Barang</h4>
 								</div>
-								<p class="pr-5 custom-text-color-1">Kami siap untuk melakukan pengantaran dan penjemputan barang.</p>
+								<p class="pr-5 custom-text-color-1">Anda tidak perlu khawatir lagi jika tidak memiliki waktu untuk mengantar dan menjemput barang.</p>
 							</div>
 							<div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-appear-animation-duration="750">
 								<img class="img-fluid" alt="Speed Performance" src="<?= base_url('assets/frontend/'); ?>img/landing/reason3.png">
 								<div class="d-flex align-items-center mb-2">
 									<span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">3</span>
-									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">BERGARANSI</small>Jaminan dari Kami</h4>
+									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">DAPAT</small>Garansi</h4>
 								</div>
-								<p class="pr-5 custom-text-color-1">Garansi atau jaminan penservisan selama 1 bulan.</p>
+								<p class="pr-5 custom-text-color-1">Anda tidak perlu khawatir mengenai keamanan servis. Tersedia garansi/jaminan penservisan selama 1 bulan.</p>
 							</div>
 							<div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" data-appear-animation-duration="750">
 								<img class="img-fluid" alt="Speed Performance" src="<?= base_url(''); ?>gambar/jadwal_kepastian.png">
 								<div class="d-flex align-items-center mb-2">
 									<span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">4</span>
-									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">JADWAL</small>Kepastian Jadwal Service</h4>
+									<h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">JADWAL</small>Kepastian Penjadwalan Service</h4>
 								</div>
 								<p class="pr-5 custom-text-color-1">Anda akan mendapatkan notifikasi penjadwalan mengenai penservisan.</p>
 							</div>

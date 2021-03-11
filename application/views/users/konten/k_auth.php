@@ -3,7 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');?>
 <div class="login-box ">
 	<!-- /.login-logo -->
 	<div class="card">
-		<img class="card-img-top" src="<?= base_url('gambar/box_lg.png'); ?>" alt="login image">
+		<div class="boximage">
+			<img class="card-img-top" src="<?= base_url('gambar/box_lg.png'); ?>" alt="login image">
+			<div class="bottom-left1">WELCOME</div>
+			<div class="bottom-left2">TO OUR MEMBER</div>
+		</div>
 		<div class="card-body login-card-body">
 			<h3 class="login-box-msg mylogin">LOGIN MEMBER</h3>
 			<p class="login-box-msg">
