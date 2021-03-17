@@ -18,6 +18,13 @@ class M_user extends CI_Model
 		$this->db->insert($this->tableBooking,$data);
 	}
 
+	public function get_data_bookingbyid($id)
+	{
+		$this->db->join($this->tableProdukJenis, 'produk_jenis.id_produkjenis=booking_servis.id_produkjenis');
+		$this->db->where('id_user', $id);
+		return $this->db->get($this->tableBooking);
+	}
+
 	#################### Setting ###############################################
 	/** Mendapatkan data email dari setting */
 	public function get_data_setting()

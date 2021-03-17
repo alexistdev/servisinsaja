@@ -144,16 +144,17 @@ class Produk extends CI_Controller
 					$dataBooking = [
 						'id_user' => $this->idUser,
 						'id_produkjenis' => $id,
+						'kode' => _angkaUnik(),
 						'nama_produk' => strtolower($namaProduk),
 						'merek_produk' => strtolower($merek),
 						'keluhan' => strtolower($keluhan),
 						'penyebab' => strtolower($penyebab),
 						'status_delivery' => strtolower($delivery),
 						'harga_total' => 0,
-						'status_servis' => 3
+						'status_servis' => 5
 					];
 					$this->user->simpan_booking($dataBooking);
-					$this->session->set_flashdata('pesan2', '<div class="alert alert-success" role="alert">Permohonan layanan servis sudah kami terima!</div>');
+					$this->session->set_flashdata('pesan1', '<div class="alert alert-success" role="alert">Permohonan layanan servis sudah kami terima!</div>');
 					redirect("user/keranjang");
 				}
 			} else {
