@@ -53,5 +53,7 @@ $route['default_controller'] = 'frontend';
 $route['user'] = 'user/Member';
 $route['user/produk'] = 'user/Produk';
 $route['user/keranjang'] = 'user/Keranjang';
+$route['user/invoice'] = 'user/Invoice';
+$route['user/setting'] = 'user/Setting';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

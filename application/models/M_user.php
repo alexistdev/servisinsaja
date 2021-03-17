@@ -11,7 +11,18 @@ class M_user extends CI_Model
 		$this->tableProdukJenis = 'produk_jenis';
 		$this->tableUser = "user";
 		$this->tableBooking = "booking_servis";
+		$this->tableInvoice = "invoice";
 	}
+
+	#################### invoice ###############################################
+
+	public function get_data_invoicebyid($data)
+	{
+		$this->db->join($this->tableBooking, 'booking_servis.id_booking=invoice.id_booking');
+		$this->db->where('invoice.id_user',$data);
+		return $this->db->get($this->tableInvoice);
+	}
+
 	#################### booking ###############################################
 	public function simpan_booking($data)
 	{
@@ -20,6 +31,7 @@ class M_user extends CI_Model
 
 	public function get_data_bookingbyid($id)
 	{
+		$this->db->order_by('status_servis', "DESC");
 		$this->db->join($this->tableProdukJenis, 'produk_jenis.id_produkjenis=booking_servis.id_produkjenis');
 		$this->db->where('id_user', $id);
 		return $this->db->get($this->tableBooking);
