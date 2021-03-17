@@ -20,7 +20,7 @@ class Frontend extends CI_Controller
 		parent::__construct();
 		$this->load->model('m_user', 'user');
 		if ($this->session->userdata('is_login_in') == TRUE) {
-			redirect('member');
+			redirect('user');
 		}
 	}
 
@@ -30,9 +30,6 @@ class Frontend extends CI_Controller
 		$data = [];
 		$getData = $this->user->get_data_setting()->row();
 		$data['title'] = ucwords($getData->judul_bisnis)." | Jasa Layanan Service Online";
-//		//nama dan gambar disidebar
-//		$data['namaUser'] = $getData;
-//		$data['gambarUser'] = $this->gambarUser;
 		return $data;
 	}
 

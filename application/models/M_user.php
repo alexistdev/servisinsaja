@@ -10,8 +10,13 @@ class M_user extends CI_Model
 		$this->tableSetting = 'setting';
 		$this->tableProdukJenis = 'produk_jenis';
 		$this->tableUser = "user";
+		$this->tableBooking = "booking_servis";
 	}
-
+	#################### booking ###############################################
+	public function simpan_booking($data)
+	{
+		$this->db->insert($this->tableBooking,$data);
+	}
 
 	#################### Setting ###############################################
 	/** Mendapatkan data email dari setting */
@@ -36,6 +41,12 @@ class M_user extends CI_Model
 
 	public function get_data_produk()
 	{
+		return $this->db->get($this->tableProdukJenis);
+	}
+
+	public function get_data_produkbyid($data)
+	{
+		$this->db->where('id_produkjenis',$data);
 		return $this->db->get($this->tableProdukJenis);
 	}
 }
