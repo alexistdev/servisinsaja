@@ -12,7 +12,7 @@ defined('BASEPATH') or exit('No direct script access allowed');?>
 	<!-- Right navbar links -->
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item">
-			<a class="nav-link" href="<?= base_url('Member/logout'); ?>" role="button">
+			<a class="nav-link" href="<?= base_url('user/Member/logout'); ?>" role="button">
 				<i class="fas fa-power-off"></i> Logout
 			</a>
 		</li>

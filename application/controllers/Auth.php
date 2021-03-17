@@ -55,10 +55,54 @@ class Auth extends CI_Controller {
 	/** Method untuk halaman Invoice */
 	public function index()
 	{
-		$data = $this->_dataMember();
-		$view = 'v_auth';
-		$this->_template($data, $view);
-
+		$this->form_validation->set_rules(
+			'email',
+			'Email',
+			'trim|required|valid_email',
+			[
+				'required' => 'Email tidak boleh kosong!',
+				'valid_email' => 'Email yang anda masukkan tidak valid!'
+			]
+		);
+		$this->form_validation->set_rules(
+			'password',
+			'Password',
+			'trim|required',
+			[
+				'required' => 'Password tidak boleh kosong!'
+			]
+		);
+		$this->form_validation->set_rules(
+			'captcha',
+			'Captcha',
+			'trim|callback__check_captcha|required',
+			[
+				'required' => 'Captcha harus diisi!'
+			]
+		);
+		$this->form_validation->set_error_delimiters('<div class="alert alert-danger" role="alert">', '</div>');
+		if ($this->form_validation->run() === false) {
+			$this->session->set_flashdata('pesan', validation_errors());
+			$data = $this->_dataMember();
+			$view = 'v_auth';
+			$this->_template($data, $view);
+		} else {
+			$email = $this->input->post('email', TRUE);
+			$password = $this->input->post('password', TRUE);
+			$cekLogin = $this->user->validasi_login($email)->row();
+			if(!password_verify($password, $cekLogin->password)){
+				$this->session->set_flashdata('pesan2', '<div class="alert alert-danger" role="alert">Username atau password anda salah!</div>');
+				redirect("Auth");
+			} else {
+				$data_session = [
+					'id_user' => $cekLogin->id_user,
+					'is_login_in' => TRUE
+				];
+				/* Mengeset data session */
+				$this->session->set_userdata($data_session);
+				redirect("user");
+			}
+		}
 	}
 
 }

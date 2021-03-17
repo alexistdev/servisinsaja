@@ -20,7 +20,7 @@ defined('BASEPATH') or exit('No direct script access allowed');?>
 
 			<form action="<?= base_url('Auth'); ?>" method="post">
 				<div class="input-group mb-3">
-					<input type="text" name="username" maxlength="30" class="form-control" placeholder="Email" required="required">
+					<input type="text" name="email" maxlength="30" class="form-control" value="<?= set_value("email"); ?>" placeholder="Email" required="required">
 					<div class="input-group-prepend">
 						<div class="input-group-text">
 							<span class="fas fa-user"></span>
@@ -28,7 +28,7 @@ defined('BASEPATH') or exit('No direct script access allowed');?>
 					</div>
 				</div>
 				<div class="input-group mb-3">
-					<input type="password" name="password" maxlength="16" class="form-control" placeholder="Password" required="required">
+					<input type="password" name="password" maxlength="16" class="form-control" value="<?= set_value("password"); ?>" placeholder="Password" required="required">
 					<div class="input-group-prepend">
 						<div class="input-group-text">
 							<span class="fas fa-lock"></span>
