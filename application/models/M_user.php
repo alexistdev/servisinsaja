@@ -10,6 +10,7 @@ class M_user extends CI_Model
 		$this->tableSetting = 'setting';
 		$this->tableProdukJenis = 'produk_jenis';
 		$this->tableUser = "user";
+		$this->tableDetailUser = "detail_user";
 		$this->tableBooking = "booking_servis";
 		$this->tableInvoice = "invoice";
 	}
@@ -51,6 +52,27 @@ class M_user extends CI_Model
 		$this->db->where('email', $email);
 		return $this->db->get($this->tableUser);
 	}
+
+	public function get_data_akun_detail($id)
+	{
+		$this->db->join($this->tableDetailUser, 'detail_user.id_user=user.id_user');
+		$this->db->where('user.id_user', $id);
+		return $this->db->get($this->tableUser);
+	}
+
+	/** Mengupdate data dari tbuser */
+	public function user_update($data,$idUser){
+		$this->db->where('id_user',$idUser);
+		$this->db->update($this->tableUser,$data);
+	}
+
+	public function detail_update($dataDetail,$idUser)
+	{
+		$this->db->where('id_user',$idUser);
+		$this->db->update($this->tableDetailUser,$dataDetail);
+	}
+
+
 
 	#################### produk_jenis ###############################################
 	public function get_data_produkjenis($limit, $start){
